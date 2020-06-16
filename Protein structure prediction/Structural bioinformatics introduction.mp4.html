@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>CAS &#8211; UA</title>
+
+  <meta name="_csrf" content=""/>
+  <meta name="_csrf_header" content=""/>
+
+  
+  <link rel="stylesheet" media="screen and (min-width: 974px)" href="/cas/themes/UA/css/cas.css" type="text/css" />
+
+	
+	<link rel="stylesheet" media="screen and (max-width: 973px)" href="/cas/themes/UA/css/default-mobile-custom.css" type="text/css" />
+
+	<link rel="icon" href="/cas/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/cas/favicon.ico" type="image/x-icon" />
+</head>
+<body id="cas">
+
+<div id="container">
+	<header>
+
+		<div id='entete' >
+			<table>
+				<tr>
+					<td id='td_logo_ua' valign='top'>
+						<a id='lien_logo_ua' title="Site web de l'Université d'Angers " href='http://www.univ-angers.fr'> 
+							<img src='themes/UA/images/logo-angers.png' alt='logo'/>
+						</a>
+					</td>
+					<td valign='top'>
+						<h1 id='servicesNumerique'>
+							<img src="themes/UA/images/puce_blanche.png" alt=">">services n<span id="u_1">u</span>mériq<span id="u_2">u</span>es
+						</h1>
+						<div id="subtitle">
+							Authentification
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+	</header>
+</div>
+
+<div id="bg">
+<div id="content">
+
+
+
+
+<div id="cookiesDisabled" class="errors" style="display:none;">
+    <h2>Cookies navigateur désactivés</h2>
+    <p>Votre navigateur ne supporte pas les cookies. L'authentification centralisée NE FONCTIONNERA PAS.</p>
+</div>
+
+
+<div class="box" id="login">
+    <form id="fm1" action="/cas/login?service=http%3A%2F%2Fmoodle.univ-angers.fr%2Flogin%2Findex.php" method="post">
+
+        
+
+        <h2>Entrez votre identifiant et votre mot de passe.</h2>
+
+        <section class="row">
+            <label class="idmdp" for="username"><span class="accesskey">I</span>dentifiant:</label>
+            
+                
+                
+                    
+                    <input id="username" name="username" class="required" tabindex="1" accesskey="i" type="text" value="" size="25" autocomplete="off"/>
+                
+            
+        </section>
+
+        <section class="row">
+            <label class="idmdp" for="password"><span class="accesskey">M</span>ot de passe:</label>
+                
+            
+            <input id="password" name="password" class="required" tabindex="2" accesskey="m" type="password" value="" size="25" autocomplete="off"/>
+            <span id="capslock-on" style="display:none;"><p><img src="images/warning.png" valign="top"> la touche Verr Maj est activée !</p></span>
+        </section>
+
+
+        <section class="row check">
+            <p>
+                <label>
+									<input id="warn" name="warn" value="true" tabindex="3" accesskey="p" type="checkbox" />
+									Prévenez-moi avant d'accéder à d'autres services.
+								</label>
+
+                <br/>
+
+                <label>
+									<input id="publicWorkstation" name="publicWorkstation" accesskey="j" value="false" tabindex="4" type="checkbox" />
+									Je suis sur un ordinateur public.
+								</label>
+
+                <br/>
+
+								<!--
+                <input type="checkbox" name="rememberMe" id="rememberMe" value="true" tabindex="5"  />
+                <label for="rememberMe">Se souvenir de moi</label>
+								-->
+            </p>
+        </section>
+
+
+        <section class="row btn-row">
+            <input type="hidden" name="lt" value="" />
+            <input type="hidden" name="execution" value="e0179ca9-c647-4957-8f6f-6ef597850d0c_ZXlKaGJHY2lPaUpJVXpVeE1pSjkuYUZKSE9VbDFkVXB5ZDNoak1XOUlTa2s0YW1kVWJXdFZWSGxyT0U0MmFsaE5iV2hPV25CTGVHNU9RWHAyYjBWMlRqaDNVRmhhVURSWVVVcDFkVTFoTTAxWU0xQjNlWGxyZEhaNE15dE9NVWg0VUdWSFExQnZVbUkwWTBkYVptVlVZbFozWm05MU9XNDBRVFE0TjJKR1NEVjBSMUJUWWtWa2RrTkpXbVZTT1c1RVQyaGhkVFkwWkc5elRrcFBTa3cwTVRNeFVrWndObkJ2Y1RaRU1rSTBUM2hzZVVObVVsZEtTRkpVUWs0MmFraHpTVmQyYkN0NlYzTmliV2hIZFRFNVJscHRVMU5tYlRkT1ZsVTBVQ3ROYVhKdlFrOU5TREpXVFhaaWJFTlFOVGRtY2pkdGJXRlhiVkpXYldSdVlWbFpTVXRNTjJGNE1YZEdiRzVOYkRBdlRVZGxNamwxWlVKUlpUQm1aWEZPYTJaSlkyOWxUeXMyWmtobGF6bDBNelZESzBkQmVtNVBTMmhJU2l0c09IRkJXRmxSVW5RMFEyczFha3RpVVhKMVFXOWxZMFJZVG5CQmJUZHNWbFpoT1RaM2JqbFVSR3RDVHl0V1kyazJPVWxOVTNCcWJtazFjRTgxWmpoS1EwZHVZVlJ0VHpRM2RVSndRVkYzUkdObFMyaG1SM2Q0TkVWR1psTlBiRmRVYmpGWFRuUlhVeXRpUlU1dldYaDZUbVozSzFoelpHUTNhelpqV2paRVdsSm1TRWhPZVUxT2VuUlBRMFpKWmpkdWQzbEVhM3BTZUVNd2NVRkxXV3gwVlRWcmVWRXdTakJsTDIxamJtdHpUVlp4VEhoa05WaHlOR3RrV21acmJ5ODVLemwxWkZSdFMzVkNUazFNU3pSQk5UQjZSeTlWVVdacmRGWnhUems1UTNwV1IwMUlVR1paUnpScFdsVnNiWGxIY2pBMWVuTkVOVEZRU1hVelRYQnFUVUUzWlhSR1JVOXphRWRxZFc5U1RXb3dOVVZ5TkhadWNIUlVVazgxVTBOU01XbE9Xa1l2T1RjMlZHdElhQ3RIWTBGc2VWbHZhV1ZTTDFWeVJXYzRUMDR6VEhjeVNrNXRlRVZtUzNKV1FtaHRURVp5VnpKaU5FWjVUelEwUjFJNE4xYzRPVU5wWlVsTGRtSnRRMGcyUWxocFZUUkxaRlUxUnpkTWJFbElTbGxXUkU5MmQwcGlNV2hTU1c1S2JVaGhZbFZLZWtsRmFrRkdSa0Y2ZFZNdlNVaDFaVVJaY21WNFlWTjRjbXBCYWtkelpXOU1SR1ZGU3pFd09HbEdPVnBPVFdWSFZqRm9ORzAzVXpoRmJIZ3ZjRUpSYUdKbFkzUlhlVzVrV2pKWlJFODRNVmRtZUhKMFRYQlJjakZ3T1hSUk5VbFJOMUVyZG1kQ2VtVldSalYxZDB3NFUzbzFSV1V3YXpad1JVSllkMDlJVWxSdmVYaFZhWEUyUW0xaFJFRXpjWEJWYUhWVlVIUlVPWEUyZW00NWVsSjNNV1ZqT0VOd1pqUlBjekZ0Wm1GSlZWTmhMM1p0VlhRd1dWTm9RMmxDV0dWeGJHbDFZUzloVG1Sd2RIRjRlV2haVVRkYVNHRlZObkl2WjNFd1ZXYzBURE01YkVocFJWTldWa2xDUWtKV00wOXphM2xhWWpOT01TOVFSMkZZWWtscFlWbGxjbk54WlcxaVVTOVNlR2xNY2tkM2FUZFVOVlVyVTJ0R0swdGtNa3BqWkUxMGEwRlROMGhRTmxWcWNUbG9VV1JRVWxCMVJDOUNZbEJ6ZVhaYWFFVndTRmMxVGpWS1JERjRRa1I0VEhkcU9WcERVRFJtWlRZdlYzTkthV2ROTTFWRmRIVnpVVlZGYnpKYWVXOUlaek5VYTI1NmVVNTROM05ZY1ZaeGNIUnVUa3BpV0ZKVFRtcFlWbk4yV2tad05TdE5RbGxKU1daNmIydGlUa05xTVRReFNYZzNWM2sxT1RKUlQydzNORmRPVGxKVVRqaGFaWFZEVTBsYWNVaFRlWHBFVmtwRU1UazJkU3RNYVhWb1F5OTNZUzlCUWxkcWNqQXJPRXQ1WTJsTFR6TnFORXhzWkZKbFptMHJVa1F2VTNGYU5EZGtXRGs0Y0hkaFExQkRNV2g0YXk5WWEzSkdhbGhCYlZVMFlUbGtOMWgxVEhGMVVrOW1NRkptVlRCeGNqVjFOazlCY0N0R2VESXZha3hFWlhGd05WRnhNekJuYm1KRlp6bG5jSGsxTmpJclRrdFBkSEpxWmxKSU9FWkNWVzVsZVRWblptRkxVaXN6TDNKdWExZ3hWV3RQUnpoVWRUTlZPWEZUWWswMFlraFhTMnhYVkd4dFVUQkJjVFZuYkZOdEszbDZTSFZDYTI5cE9WUkxaalJsWTBKd1lrWnFlbVJDTnpCd2NHVlNSbWxYY0hGUE0wMWFkVlZ2U2s5d01VdHZVRUpRZFVSMWVXRnJTa1YzVEhodldtbDVaV1ZOVm1WamVucHBSbnBEYlZwaWNreEtRVnAxWW5CU1VUYzBNWEIyVEV4cVNraFZUWElyU0VkclYydFBXR3d2V21ScFRHWk9TRlpzTHk5d2NWcFBkMmcwTVROcVNHNTFjMVpWVjBwU1RGRTRkSGhVWVhNMWNtWjZSaTlIYjBwbWNVeHhjVVYwTWxWcFUwNVFkSEF4YmpKSVFWbzJjSE5wU0VOTlFWRjVhRTFQWldrMVlYbHNZMHhVV2xSNk1FWm1iVzFrVGxJM2RFbzNkbGd4UjJwTlMyNXZlRGRYVEN0UlFWRjZTVzVJVlU5dk5Xb3ljbGt5UlZBeFZFUnNUME5UZDFSc1pVcHhaMWRWWWtKSlIwNU9XRmxUVVdaMVlscFdkekIyYlc1NU9FUnJVelJFTmt0a1lWWmhOa0ZHVjJkUVRtdDBVM2xSV21wWVV6VjFVbmcwTkNzd2NHbFpaa3htVkhOYVowRTVkRGRaVlM5bGRtSjFablZXZDBKc2QwUnpUM0pGUjFOM1oxYzVhMjlKSzI4M2FVSlZUbkJWWVhkNk4yOWpXalpDUkRseVdqWnJjeTk0YUUxRWJXbERSM1JKYVhaemVWaFdkVVpEVm5Gd1R6QlpOMnRhVVN0c2QwczRVR3hoZDJaclltZE9PVzFMSzJKNE9XTTRVMHRuU2xsRlZESk1NUzlOVTFGVWJWaFpNWFZFVkZabU9EaFROVGswTW1FeGRFdFJZMHBMUTFnMmRFdE5TRmhaU0dodGRIY3diVkIyYkhwVlFWaFFUR1pEZVZabmIzZDVkWHB6SzFFMFEzWmpOR3RwVG1wemFXUm5jRlJzTVRSRGQxQkhSbFpwUTNkTVptSjViSGt3TUZGWFJERnJObkpCWVN0VlpUTTFNamxuVEdsNk4wMXFha1ZKVkdrNE5Fc3ZPRk4zVkc4dllWQnNlRmxrVkVSbUszVkpjMFo0YTJOcWJDOTRabFJ3WmxBcmRFbE1kSFpGVjBOWU1rTTJOM0J3V1V0NU9XVm1Wa3hHYXpSMVFqQTFjbTFCTkdneFEwdGlNU3RUUkVsalprUmlSVWx4TW10bmRXb3JZblZyTDJjOS5PZ1J4M21RT3hQam1DTjRuZXdMU2dkbEg4bzZvMWZCbkpuZXhGbnNlaGxQRzJ1RW1rZEdBNUY4cmx0cWJtTUF2eHV3N1hmSzVURzVvVm1JUFJrcXd4Zw==" />
+            <input type="hidden" name="_eventId" value="submit" />
+
+            <input class="btn-submit" name="submit" accesskey="l" value="Valider" tabindex="6" type="submit" />
+            <input class="btn-reset" name="reset" accesskey="c" value="Effacer" tabindex="7" type="reset" />
+        </section>
+    </form>
+</div>
+
+<div id="sidebar">
+    <div class="sidebar-content">
+        <p>
+					Pour des raisons de sécurité, veuillez vous déconnecter et fermer
+					<br/>
+					votre navigateur lorsque vous avez fini d'accéder aux services authentifiés.
+					<br/>
+					De plus, votre navigateur doit indiquer que vous accédez à une page sécurisée.
+				</p>
+
+				<div class="block_etudiant">
+					<span class="title cufon">Étudiant·e·s</span>
+					<ul class="sub-nav">
+						<li>
+							<a href="https://valident.univ-angers.fr/valident/Etudiant" class="link_uang">Créer mon compte</a>
+						</li>
+
+						<li>
+							<a href="https://valident.univ-angers.fr/valident/EtudiantMdp" class="link_uang">Mot de passe oublié ?</a>
+						</li>
+					</ul>
+				</div>
+
+
+				<div class="block_personnel">
+					<span class="title cufon">Personnels</span>
+					<ul class="sub-nav">
+						<li>
+							<a href="https://valident.univ-angers.fr/valident/Personnel" class="link_uang">Créer mon compte</a>
+						</li>
+
+						<li>
+              <a href="https://valident.univ-angers.fr/valident/PersonnelMdp" class="link_uang">Mot de passe oublié ?</a>
+            </li>
+					</ul>
+				</div>
+
+				<div style="clear:left"></div>
+
+        
+
+
+        <div id="block_enSavoirPlus">
+          <span>En savoir plus : </span>
+          <ul>
+            <li>
+							<a href="http://helpdesk.univ-angers.fr/" class="link_enSavoirPlus">Assistance</a>
+						</li>
+            <span class="link_barre_enSavoirPlus">|</span>
+						<li>
+              <a href="http://www.univ-angers.fr/fr/vie-des-campus/numerique/systeme-d-information.html" class="link_enSavoirPlus">
+                Charte d'usage du système d'information
+              </a>
+            </li>
+          </ul>
+        </div>
+
+
+
+
+    </div>
+</div>
+
+
+
+</div> <!-- END #content -->
+</div> <!-- END #bg -->
+
+<footer>
+
+</footer>
+
+  <div id="list-languages">
+      
+      
+      
+
+      <h3>Languages : </h3>
+
+      
+          
+          
+              
+              <ul>
+                  <li class="first"><a href="login?service=http%3A%2F%2Fmoodle.univ-angers.fr%2Flogin%2Findex.php&locale=en">English</a></li> |
+                  <li><a href="login?service=http%3A%2F%2Fmoodle.univ-angers.fr%2Flogin%2Findex.php&locale=es">Spanish</a></li> |
+                  <li><a href="login?service=http%3A%2F%2Fmoodle.univ-angers.fr%2Flogin%2Findex.php&locale=fr">French</a></li>
+              </ul>
+          
+      
+  </div>
+
+
+</div> <!-- END #container -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<script type="text/javascript" src="/cas/themes/UA/js/cas.js"></script>
+
+</body>
+</html>
+

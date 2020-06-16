@@ -1,0 +1,17 @@
+Lancer la prédiction en ligne de commande :
+
+soit : 
+    python fichier.py
+ou :
+    chmod +x fichier.py
+    ./fichier.py
+
+
+Éléments auxquels il faut être vigilant pour le fichier d'alignement (fichier.pir)
+
+    Le fichier PDB "4run" doit être dans le répertoire de travail
+    La numérotation dans le fichier PDB ne correspond probablement pas à celle dans uniprot (peptide signal non compté, méthionine initiatrice clivée, ...)
+    La séquence indiquée dans le champ SEQRES du PDB peut ne pas avoir été résolue dans la structure cristallographique (il peut y avoir des acides aminés manquants)
+    La séquence du PDB peut être différente de celle de la protéine de référence (la séquence a été modifiée pour la cristallographie).
+
+MODELLER ne prend en compte que ce qu'il détecte, c'est à dire la séquence réellement disponible dans le PDB.
